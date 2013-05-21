@@ -1,5 +1,6 @@
 package org.dharma.Viewer;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -7,10 +8,10 @@ import java.util.List;
  * Author: James Sweet
  */
 public class Model {
-    String Title;
-    float Radius = 1.0f;
-    float[] View = new float[4];
-    float[] Center = new float[3];
-    String Path;
-    List<Cloud> Data;
+    public String Title;
+    public String Radius;
+    public String View;
+    public String Center;
+    public String Path;
+    public List<Cloud> Data = new ArrayList<Cloud>();
 }

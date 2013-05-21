@@ -5,8 +5,8 @@ package org.dharma.Viewer;
  * Author: James Sweet
  */
 public class Cloud {
-    float[] Transformation = new float[16];
-    float Scale = 1.0f;
-    int Points = 0;
+    String Transformation;
+    String Scale;
+    String Points;
     String Path;
 }

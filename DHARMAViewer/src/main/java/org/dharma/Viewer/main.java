@@ -6,12 +6,16 @@ import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Date: 5/19/13
  * Author: James Sweet
  */
 public class Main extends Activity {
     private AssetManager mAssets;
+    private List<Model> mModels = new ArrayList<Model>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,23 @@ public class Main extends Activity {
                 // Test if they are xml descriptor files
                 if( file.contains(".xml") ){
                     Log.i("Main", "Model File: " + file );
+
+                    for( Model m : DharmaXmlParser.Parse( mAssets.open(file) ) ){
+                        Log.i("Model", "Title: " + m.Title);
+                        Log.i("Model", "Radius: " + m.Radius);
+                        Log.i("Model", "View: " + m.View);
+                        Log.i("Model", "Center: " + m.Center);
+                        Log.i("Model", "Path: " + m.Path);
+
+                        for( Cloud c : m.Data ){
+                            Log.i("Cloud", "\tTransformation: " + c.Transformation);
+                            Log.i("Cloud", "\tScale: " + c.Scale);
+                            Log.i("Cloud", "\tPoints: " + c.Points);
+                            Log.i("Cloud", "\tPath: " + c.Path);
+                        }
+
+                        mModels.add( m );
+                    }
                 }
             }
         }catch( Exception e ){
