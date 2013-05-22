@@ -1,13 +1,11 @@
 package org.dharma.Viewer;
 
 import android.content.res.AssetManager;
+import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Date: 5/19/13
@@ -15,7 +13,10 @@ import java.util.List;
  */
 public class Main extends Activity {
     private AssetManager mAssets;
-    private List<Model> mModels = new ArrayList<Model>();
+
+    // UI Fields
+    private GLSurfaceView mRendererView;
+    private Renderer mRenderer = new Renderer();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,10 @@ public class Main extends Activity {
 
         // Store Asset Manager
         mAssets = this.getAssets();
+
+        // Setup UI
+        mRendererView = (GLSurfaceView)findViewById( R.id.renderer );
+        mRendererView.setRenderer(mRenderer);
     }
 
     @Override
@@ -39,7 +44,7 @@ public class Main extends Activity {
                 if( file.contains(".xml") ){
                     Log.i("Main", "Model File: " + file );
 
-                    for( Model m : DharmaXmlParser.Parse( mAssets.open(file) ) ){
+                    for( Model m : DharmaXmlParser.Parse( mAssets, file ) ){
                         Log.i("Model", "Title: " + m.Title);
                         Log.i("Model", "Radius: " + m.Radius);
                         Log.i("Model", "View: " + m.View);
@@ -47,13 +52,11 @@ public class Main extends Activity {
                         Log.i("Model", "Path: " + m.Path);
 
                         for( Cloud c : m.Data ){
-                            Log.i("Cloud", "\tTransformation: " + c.Transformation);
                             Log.i("Cloud", "\tScale: " + c.Scale);
                             Log.i("Cloud", "\tPoints: " + c.Points);
-                            Log.i("Cloud", "\tPath: " + c.Path);
                         }
 
-                        mModels.add( m );
+                        mRenderer.mModels.add( m );
                     }
                 }
             }
