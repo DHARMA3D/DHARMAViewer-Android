@@ -1,7 +1,5 @@
 package org.dharma.Viewer;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -69,8 +67,10 @@ public class DharmaXmlParser {
                 retVal.Center = readCenter(parser);
             } else if ( name.equals("packagepath") ) {
                 retVal.Path = readPath(parser);
+            } else if ( name.equals("container") ) {
+                readContainer(retVal, parser);
             } else if ( name.equals("cloud") ) {
-                readCloud(retVal, parser);
+                readCloud(retVal, null, 1.0f, parser);
             } else {
                 skip(parser);
             }
@@ -132,12 +132,82 @@ public class DharmaXmlParser {
         return title;
     }
 
-    // Cloud Functions
-    private static void readCloud( Model model, XmlPullParser parser) throws IOException, XmlPullParserException {
-        parser.require(XmlPullParser.START_TAG, null, "cloud");
+    // Contaner Functions
+    public static void readContainer( Model model, XmlPullParser parser ) throws IOException, XmlPullParserException {
+        parser.require(XmlPullParser.START_TAG, null, "container");
 
         float[] Transformation = new float[16];
         float Scale = 1.0f;
+
+        while (parser.next() != XmlPullParser.END_TAG) {
+            if (parser.getEventType() != XmlPullParser.START_TAG) {
+                continue;
+            }
+            String name = parser.getName();
+            if (name.equals("transformmatrix")) {
+                Transformation = readTransformMatrix(parser);
+            } else if ( name.equals("pointscale") ) {
+                Scale = readPointScale(parser);
+            } else if ( name.equals("mesh") ) {
+                readMesh(model, Transformation, Scale, parser);
+            } else if ( name.equals("cloud") ) {
+                readCloud(model, Transformation, Scale, parser);
+            } else {
+                skip(parser);
+            }
+        }
+    }
+
+    // Mesh Functions
+    /*
+    <mesh>
+				<numberpoints>227</numberpoints>
+				<numberindexes>1053</numberindexes>
+				<texture>ArchOfSeptimis-18-30.jpg</texture>
+				<points>ArchOfSeptimis-18-30.dat</points>
+				<indexes>ArchOfSeptimis-18-30-index.dat</indexes>
+			</mesh>
+     */
+
+    private static void readMesh( Model model, float[] transform, float scale, XmlPullParser parser) throws IOException, XmlPullParserException {
+        parser.require(XmlPullParser.START_TAG, null, "mesh");
+
+        float[] Transformation = transform;
+        float Scale = scale;
+        int Points = 0;
+        int Indicies = 0;
+        String PointsPath = "";
+        String IndexPath = "";
+
+        while (parser.next() != XmlPullParser.END_TAG) {
+            if (parser.getEventType() != XmlPullParser.START_TAG) {
+                continue;
+            }
+            String name = parser.getName();
+            if (name.equals("transformmatrix")) {
+                Transformation = readTransformMatrix(parser);
+            } else if ( name.equals("numberpoints") ) {
+                Points = readInt("numberpoints", parser);
+            } else if ( name.equals("numberindexes") ) {
+                Indicies = readInt("numberindexes", parser);
+            } else if ( name.equals("points") ) {
+                PointsPath = readString("points", parser);
+            } else if ( name.equals("indexes") ) {
+                IndexPath = readString("indexes", parser);
+            } else {
+                skip(parser);
+            }
+        }
+
+        model.addMesh(Transformation, PointsPath, Points, IndexPath, Indicies);
+    }
+
+    // Cloud Functions
+    private static void readCloud( Model model, float[] transform, float scale, XmlPullParser parser) throws IOException, XmlPullParserException {
+        parser.require(XmlPullParser.START_TAG, null, "cloud");
+
+        float[] Transformation = transform;
+        float Scale = scale;
         int Points = 0;
         String Path = "";
 
@@ -147,9 +217,9 @@ public class DharmaXmlParser {
             }
             String name = parser.getName();
             if (name.equals("transformmatrix")) {
-                Transformation = readCloudTransform(parser);
+                Transformation = readTransformMatrix(parser);
             } else if ( name.equals("pointscale") ) {
-                Scale = readCloudScale(parser);
+                Scale = readPointScale(parser);
             } else if ( name.equals("numbercolorpoints") ) {
                 Points = readCloudPoints(parser);
             } else if ( name.equals("colorpoints") ) {
@@ -162,7 +232,7 @@ public class DharmaXmlParser {
         model.addCloud(Transformation, Scale, Points, Path);
     }
 
-    private static float[] readCloudTransform(XmlPullParser parser) throws IOException, XmlPullParserException {
+    private static float[] readTransformMatrix(XmlPullParser parser) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, null, "transformmatrix");
         String data = readText(parser);
         parser.require(XmlPullParser.END_TAG, null, "transformmatrix");
@@ -178,7 +248,7 @@ public class DharmaXmlParser {
         return retVal;
     }
 
-    private static float readCloudScale(XmlPullParser parser) throws IOException, XmlPullParserException {
+    private static float readPointScale(XmlPullParser parser) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, null, "pointscale");
         String data = readText(parser);
         parser.require(XmlPullParser.END_TAG, null, "pointscale");
@@ -202,6 +272,22 @@ public class DharmaXmlParser {
     }
 
     // Helper Functions
+    private static int readInt(String tag, XmlPullParser parser) throws IOException, XmlPullParserException {
+        parser.require(XmlPullParser.START_TAG, null, tag);
+        String data = readText(parser);
+        parser.require(XmlPullParser.END_TAG, null, tag);
+
+        return Integer.parseInt(data);
+    }
+
+    private static String readString(String tag, XmlPullParser parser) throws IOException, XmlPullParserException {
+        parser.require(XmlPullParser.START_TAG, null, tag);
+        String data = readText(parser);
+        parser.require(XmlPullParser.END_TAG, null, tag);
+
+        return data;
+    }
+
     private static String readText(XmlPullParser parser) throws IOException, XmlPullParserException {
         String result = "";
         if (parser.next() == XmlPullParser.TEXT) {

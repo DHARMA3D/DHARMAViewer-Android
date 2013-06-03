@@ -30,12 +30,14 @@ public class Renderer implements GLSurfaceView.Renderer {
 
         gl.glPushMatrix();
         {
-            gl.glTranslatef( 0.0f, 0.0f, -mModels.get(0).Radius );
-            gl.glRotatef(X, 0.0f, 1.0f, 0.0f);
-            //gl.glRotatef(Y, 1.0f, 0.0f, 0.0f);
+            if( mModels.size() > 0 ){
+                gl.glTranslatef( 0.0f, 0.0f, -( 2 * mModels.get(0).Radius) );
+                gl.glRotatef(X, 0.0f, 1.0f, 0.0f);
+                //gl.glRotatef(Y, 1.0f, 0.0f, 0.0f);
 
-            for( Model c : mModels ){
-                c.DrawClouds(gl);
+                for( Model c : mModels ){
+                    c.DrawClouds(gl);
+                }
             }
         }
         gl.glPopMatrix();

@@ -51,11 +51,6 @@ public class Main extends Activity {
                         Log.i("Model", "Center: " + m.Center);
                         Log.i("Model", "Path: " + m.Path);
 
-                        for( Cloud c : m.Data ){
-                            Log.i("Cloud", "\tScale: " + c.Scale);
-                            Log.i("Cloud", "\tPoints: " + c.Points);
-                        }
-
                         mRenderer.mModels.add( m );
                     }
                 }

@@ -11,30 +11,56 @@
       </filter>
     </filters>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="DHARMA" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1796fc98-f7ca-4cf6-bd66-be823911a999" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/main.java" afterPath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/DHARMAViewer/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Cloud.java" afterPath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Cloud.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Mesh.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/AkbarPrune.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-0.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-1.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-10.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-11.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-12.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-13.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-14.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-15.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-16.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-17.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-18.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-19.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-20.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-21.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-22.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-5.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-6.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-7.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-8.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/assets/akbarprune/AkbarPrunePoints-9.dat" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/DharmaXmlParser.java" afterPath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/DharmaXmlParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Model.java" afterPath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/DHARMAViewer/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Renderer.java" afterPath="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Renderer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DHARMAViewer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369182497208" ignored="false" />
+    <file path="/Main.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369187533203" ignored="false" />
     <file path="/Dummy.txt" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369185036526" ignored="false" />
-    <file path="/DharmaXmlParser.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369182058553" ignored="false" />
-    <file path="/Model.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369184375988" ignored="false" />
-    <file path="/fragment.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369180036544" ignored="false" />
+    <file path="/DharmaXmlParser.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369187835860" ignored="false" />
+    <file path="/Model.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369187557115" ignored="false" />
+    <file path="/fragment.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369187027004" ignored="false" />
     <file path="/Vector4f.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369020352664" ignored="false" />
     <file path="/Vector3f.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369020364066" ignored="false" />
     <file path="/Cloud.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369184398964" ignored="false" />
     <file path="/a.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369020448603" ignored="false" />
     <file path="/sample.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369020455474" ignored="false" />
     <file path="/CloudModel.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369181027354" ignored="false" />
-    <file path="/Renderer.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369184640493" ignored="false" />
+    <file path="/Renderer.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369187644360" ignored="false" />
+    <file path="/Mesh.java" changelist="1796fc98-f7ca-4cf6-bd66-be823911a999" time="1369188477171" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +117,38 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/DharmaXmlParser.java" line="141" class="org.dharma.Viewer.DharmaXmlParser" package="org.dharma.Viewer">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/DharmaXmlParser.java" line="172" class="org.dharma.Viewer.DharmaXmlParser" package="org.dharma.Viewer">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -100,19 +158,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AkbarPrune.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/assets/AkbarPrune.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="24" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="47" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.0">
+            <state line="51" column="58" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,7 +170,7 @@
       <file leaf-file-name="Renderer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Renderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
+            <state line="18" column="0" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#432#439#0" expanded="true" />
@@ -133,16 +182,40 @@
       <file leaf-file-name="Model.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
+            <state line="55" column="0" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#504#511#0" expanded="true" />
+                <element signature="e#558#564#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mesh.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Mesh.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="26" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.2857143">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cloud.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Cloud.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="4" selection-start="425" selection-end="2551" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cloud.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Cloud.java">
+      <file leaf-file-name="ArchOfSeptimis.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/assets/ArchOfSeptimis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="30" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.20476191">
+            <state line="14" column="57" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -172,12 +245,13 @@
         <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/org/dharma/Viewer/Model/Cloud.java" />
         <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Model/CloudModel.java" />
         <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/model/CloudModel.java" />
-        <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/DharmaXmlParser.java" />
-        <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Main.java" />
-        <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Model.java" />
-        <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Renderer.java" />
         <option value="$PROJECT_DIR$/DHARMAViewer/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Cloud.java" />
+        <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Main.java" />
+        <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Model.java" />
+        <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/DharmaXmlParser.java" />
+        <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Renderer.java" />
+        <option value="$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Mesh.java" />
       </list>
     </option>
   </component>
@@ -580,12 +654,12 @@
       <workItem from="1369017450281" duration="1822000" />
       <workItem from="1369057446147" duration="26000" />
       <workItem from="1369177940924" duration="6904000" />
-      <workItem from="1369185033724" duration="625000" />
+      <workItem from="1369185033724" duration="3585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9377000" />
+    <option name="totallyTimeSpent" value="12337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1102" extended-state="6" />
@@ -599,13 +673,13 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299389" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299389" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299389" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2022412" sideWeight="0.6700611" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299389" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299389" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -675,18 +749,11 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/DharmaXmlParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1099#1106#0" expanded="true" />
+            <element signature="e#1046#1053#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -694,20 +761,17 @@
     <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="3" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#504#511#0" expanded="true" />
+            <element signature="e#558#564#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Cloud.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="19" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/assets/AkbarPrune.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="283" selection-end="537" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -723,7 +787,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1099#1106#0" expanded="true" />
+            <element signature="e#1046#1053#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -731,43 +795,17 @@
     <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="3" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#504#511#0" expanded="true" />
+            <element signature="e#558#564#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Cloud.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="19" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/DharmaXmlParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="78" selection-start="3857" selection-end="3875" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1099#1106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/assets/AkbarPrune.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="47" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -781,9 +819,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="58" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/java/util/ArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.85714287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/assets/ArchOfSeptimis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="57" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/DharmaXmlParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="284" column="18" selection-start="10500" selection-end="10500" vertical-scroll-proportion="0.60952383">
+          <folding>
+            <element signature="e#1046#1053#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Cloud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="4" selection-start="425" selection-end="2551" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Renderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
+        <state line="18" column="0" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#432#439#0" expanded="true" />
@@ -791,10 +866,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Cloud.java">
+    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="30" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.20476191">
-          <folding />
+        <state line="55" column="0" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#504#511#0" expanded="true" />
+            <element signature="e#558#564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DHARMAViewer/src/main/java/org/dharma/Viewer/Mesh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="26" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.2857143">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
